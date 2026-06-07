@@ -222,6 +222,10 @@ figcaption {
   margin-bottom: 0;
 }
 
+.about-figure > img {
+  max-width: 550px;
+}
+
 /* MEDIA QUERIES */
 
 @media (max-width: 768px) {
