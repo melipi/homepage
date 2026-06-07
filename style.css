@@ -39,7 +39,7 @@ h6 {
 
 a {
   color: inherit;
-  text-decoration: none;
+  text-decoration: #647eb2 underline; 
 }
 
 button,
@@ -73,7 +73,6 @@ p {
 }
 
 ul {
-  padding-left: 2rem;
   list-style: none;
 }
 
@@ -98,6 +97,10 @@ header {
   background-color: #10101d;
   font-size: 0.9rem;
   flex-wrap: wrap;
+}
+
+header a {
+    text-decoration: none;
 }
 
 header p {
@@ -145,20 +148,20 @@ section {
 }
 
 .title a {
-  background: repeating-linear-gradient(90deg, #e058ff, #c158ff, #a359ff, #8459ff, #665aff, #5a6dff, #5b8bff, #5baaff) 0/200%;
+  background: repeating-linear-gradient(90deg, #c6adff, #80c3ff, #c6adff) 0/200%;
   background-clip: text;
   -webkit-background-clip: text;
-  background-size: 200% 100%;
-  background-position: 0% 0%;
+  background-size: 200%;
+  background-position: 0%;
 }
 
 .title a:hover {
   color: transparent;
-  animation: gradient-loop 6s linear infinite;
+  animation: gradient-loop 2s linear infinite reverse;
 }
 
 @keyframes gradient-loop {
-  to {background-position: 100% 0%;}
+  to {background-position: 200% 0%;}
 }
 
 .main-nav {
@@ -209,6 +212,15 @@ figcaption {
   transform: scale(1.01);
 }
 
+.hero {
+  margin-bottom: 2rem;
+}
+
+.intro, footer>p {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
 /* MEDIA QUERIES */
 
 @media (max-width: 768px) {
@@ -218,18 +230,12 @@ figcaption {
   }
 
   pre {
-    font-size: 0.4rem;
-    padding: 0.75rem;
-    border-radius: 0.15rem;
+    font-size: 0.5rem;
   }
 }
 
 @media (min-width: 768px) {
   main {
-    padding: 5rem;
-  }
-
-  footer {
     padding: 5rem;
   }
 
