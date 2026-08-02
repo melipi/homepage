@@ -45,6 +45,20 @@
                 </h2>
             </nav>
         </section>
+        <section>
+            <a href="contact.html">
+                <div id="townsquare-count"></div>
+            </a>
+            <script type="module">
+            import { mountTownSquareCounter } from "https://townsquare.cauenapier.com/townsquare-counter.mjs";
+
+            mountTownSquareCounter(document.getElementById("townsquare-count"), {
+                serverOrigin: "https://townsquare.cauenapier.com",
+                siteKey: "site_ug_UfCQUWi938zVY",
+                variant: "pill"
+            });
+            </script>
+        </section>
     </main>
 
     <footer>
