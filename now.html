@@ -9,6 +9,9 @@
     <title>Melissa Pita | Now</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&family=Karla:ital,wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://townsquare.cauenapier.com" crossorigin />
+    <link rel="stylesheet" href="https://townsquare.cauenapier.com/widget.css" />
+    <link rel="stylesheet" href="https://townsquare.cauenapier.com/api/sites/site_ug_UfCQUWi938zVY/style.css" />
     <header>
         <p><a href="index.html">[π] melissa-pita-v1.0</a></p>
         <ul>
@@ -36,14 +39,26 @@
                     <li>now</li>
                 </ul>
             </h2>
-            <p><em>Last updated: 2026-June-20</em></p>
-            <p><strong>Latest:</strong> Resized most images and added "Kiko" digital painting</p>
-            <p><strong>Book:</strong> J.R.R. Tolkien - Lord of the Rings (Narrated by Andy Serkis)</p>
+            <p><em>Last updated: 2026-02-August</em></p>
+            <p><strong>Latest:</strong> Added a town square!</p>
+            <p><strong>Book/ Audiobook:</strong> J.R.R. Tolkien - The Return of the King (Narrated by Andy Serkis)</p>
             <p><strong>In Progress:</strong></p>
             <ul>
-                <li>Recovering from a cold</li>
-                <li>Moving!</li>
+                <li>Recovering from another cold lol</li>
+                <li>Settling in to the new place</li>
             </ul>
+        </section>
+        <section>
+            <div id="townsquare-root"></div>
+                <script type="module" async>
+                import { mountTownSquare } from "https://townsquare.cauenapier.com/townsquare.mjs";
+
+                mountTownSquare(document.getElementById("townsquare-root"), {
+                    serverOrigin: "https://townsquare.cauenapier.com",
+                    siteKey: "site_ug_UfCQUWi938zVY",
+                    theme: "host"
+                });
+                </script>
         </section>
     </main>
 
